@@ -1,0 +1,17 @@
+INSTALL:
+You need to install:
+- scapy version > 2.0, available as a package in ubuntu or at http://www.secdev.org/projects/scapy/
+- python-progressbar, availabe as a package in ubuntu or at http://pypi.python.org/pypi/progressbar
+- python, of course
+- python-pcapy
+- python-impacket
+
+HELP
+For help, type
+python run.py --help
+
+EX.
+python run.py -s $SND_CAP_FILE_ETH -r $RCVD_CAP_FILE_PPP --data-sender-mac=$SND_MAC --save-report=report.log
+
+You need to supply --data-*-mac argument for each cap file with an ethernet header
+
